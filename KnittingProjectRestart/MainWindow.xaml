@@ -1,0 +1,26 @@
+﻿<Window x:Class="KnittingProjectRestart.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KnittingProjectRestart"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lbl_Title" Content="Knitting Project Diary" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="136"/>
+        <ListBox x:Name="lbx_ProjectsList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="168,148,168,148"/>
+        <Button x:Name="Btn_NewProject" Content="Create New Project" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" Width="242" Click="Button_Click"/>
+        <Button x:Name="btn_OpenProject" Content="Open" HorizontalAlignment="Center" Margin="0,303,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_ProjectList" Content="Projects" HorizontalAlignment="Center" Margin="0,117,0,0" VerticalAlignment="Top"/>
+        <TabControl>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+
+    </Grid>
+</Window>
